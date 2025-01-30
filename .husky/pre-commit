@@ -1,0 +1,3 @@
+export changedfiles=$(git diff --name-only HEAD **/*.ts | xargs)
+npm run lint:changed-files
+npm run format:changed-files
